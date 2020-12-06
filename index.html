@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list">
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Not only people need a house</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="About">
+      <div class="landing__container">
+        <h2>About</h2>
+        <img src="https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_960_720.jpg" alt="Oops, image lost!">
+        <p>Ask anyone who has adopted a pet and they’ll share with you their story of love, fun and companionship. Why? Because shelter pets are amazing!</p>
+          <p>The Shelter "Make Friends" is the result of a collaborative effort of a few friends, who .
+          Our goal is to help you find a new friend and make sure that each our pet finds loving homes.</p>
+        <p>Our mission is clear: to take responsibility for each and every orphaned, abandoned, abused or neglected dog and cat which reaches our doors; to take them in and shelter them; to provide the best medical and physical care possible for them; to nurture them back to health if need be; and finally to place them into warm, loving, adoptive homes where they can enjoy the lives they deserve.</p>
+        <p>  Adopting a pet from a shelter or rescue is a win-win, for you and the pet. So, what are you waiting for? Begin your search for cats and dogs available for adoption near you today.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Pets">
+      <div class="landing__container">
+        <h2>Pets</h2>
+        <p>Visit our location to meet our adoptable animals. All of our animals are spayed/neutered, microchipped, vaccinated, and ready to start the next chapter of their lives. Our knowledgeable adoption specialists are happy to help you find the pet that matches your home and lifestyle.</p>
+        <p>Dogs and cats who are taken into the care of shelters and rescue groups each year find themselves homeless through no fault of their own; “moving” and “landlord issues” are the top reasons people give up their pets.
+        This means shelters and rescues are full of loving, spayed or neutered, vaccinated and often trained pets who are just waiting to meet you! By adopting a cat or dog from a shelter or rescue, you can rest assured that you have not supported the puppy mill industry.</p>
+        <img src="images/petslot.jpg" alt="Oops, Image lost!">
+      </div>
+    </section>
+    <section id="section3" data-nav="Donations">
+      <div class="landing__container">
+        <h2>Donations</h2>
+        <p>If you are not ready to adopt a pet, but your heart is with us, you still can help us!</p>
+        <p>Here is the list on items you can donate:</p>
+        <ol>
+          <li>Cups & Bowls</li>
+          <li>Food & Toys</li>
+          <li>Sleeping areas</li>
+          <li>Vitamins, medicines</li>
+          <li>Collars & Lashes</li>
+          <li>Shampoos</li>
+          <li>Transportation cages</li>
+        </ol>
+        <img src="images/cattoy.jpg" alt="Oops, image lost!">
+      </div>
+    </section>
+    <section id="section4" data-nav="Contacts">
+      <div class="landing__container">
+        <h2>Contacts</h2>
+        <p>We are really happy you decided to contact us!</p>
+        <p>Phone: 1(999)12345678</p>
+        <p>Email: makefriend_shelter@gmail.com</p>
+        <p>Location: Munich, Ruppertstraße 178</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Shelter "Make friends"</p>
+  </footer>
+  <script src="js/app.js" type="text/javascript">
+  </script>
+</body>
+</html>
